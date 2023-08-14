@@ -1,0 +1,57 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(problems)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
+set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
+
+set(PROBLEMS
+    easy
+    medium
+    hard)
+
+set(easy
+    1.two_sum
+    2.palindrome_number
+    3.roman_to_int
+    )
+
+set(medium
+    )
+
+set(hard
+    )
+
+function(create_project_from_sources chapter demo)
+    # copy source files
+    file(GLOB SOURCE
+        "src/${chapter}/${demo}/*.h"
+        "src/${chapter}/${demo}/*.cpp"
+        )
+    if(demo STREQUAL "")
+        set(replaced "")
+        string(REPLACE "/" "_" replaced ${chapter})
+    else()
+        set(NAME "${chapter}__${demo}")
+    endif()
+    add_executable(${NAME} ${SOURCE})
+    if(WIN32)
+        set_target_properties(${NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
+        set_target_properties(${NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
+    elseif(UNIX AND NOT APPLE)
+        set_target_properties(${NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
+    endif(WIN32)
+
+endfunction()
+
+
+# create project file per problem
+foreach(PROBLEM ${PROBLEMS})
+    foreach(DEMO ${${PROBLEM}})
+        create_project_from_sources(${PROBLEM} ${DEMO})
+    endforeach(DEMO)
+endforeach(CHAPTER)
