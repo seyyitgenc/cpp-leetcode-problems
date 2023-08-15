@@ -16,11 +16,14 @@ set(PROBLEMS
 
 set(easy
     1.two_sum
-    2.palindrome_number
-    3.roman_to_int
+    9.palindrome_number
+    13.roman_to_int
     )
 
 set(medium
+    2.add_two_numbers
+    7.reverse_integer
+    15.3sum
     )
 
 set(hard
