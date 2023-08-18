@@ -2,6 +2,8 @@
 #include <vector>
 #include <math.h>
 
+// problem link : https://leetcode.com/problems/palindrome-number/
+
 class Solution {
 public:
     bool isPalindrome(int x){

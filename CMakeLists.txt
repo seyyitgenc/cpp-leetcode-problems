@@ -18,12 +18,17 @@ set(easy
     1.two_sum
     9.palindrome_number
     13.roman_to_int
+    14.longest_common_prefix
     )
 
 set(medium
     2.add_two_numbers
     7.reverse_integer
+    11.container_with_most_water
     15.3sum
+    16.3sum_closest
+    19.remove_nth_node_from_end
+    213.house_robber
     )
 
 set(hard

@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <map>
+
+// problem : https://leetcode.com/problems/two-sum/
+
 class Solution {
 public:
      std::vector<int> twoSum(std::vector<int> &numbers, int target) {
