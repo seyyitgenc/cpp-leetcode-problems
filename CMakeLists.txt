@@ -19,6 +19,7 @@ set(easy
     9.palindrome_number
     13.roman_to_int
     14.longest_common_prefix
+    21.merge_two_sorted_lists
     )
 
 set(medium
@@ -28,6 +29,7 @@ set(medium
     15.3sum
     16.3sum_closest
     19.remove_nth_node_from_end
+    49.group_anagrams
     213.house_robber
     )
 
