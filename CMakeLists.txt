@@ -20,6 +20,13 @@ set(easy
     13.roman_to_int
     14.longest_common_prefix
     21.merge_two_sorted_lists
+    26.remove_duplicates_sorted
+    27.remove_element
+    88.merge_sorted_array
+    121.max_profit_stocks
+    169.majority_element
+    217.contains_duplicates
+    242.valid_anagram
     )
 
 set(medium
@@ -29,8 +36,12 @@ set(medium
     15.3sum
     16.3sum_closest
     19.remove_nth_node_from_end
+    48.rotate_image
     49.group_anagrams
-    213.house_robber
+    198.house_robber1
+    213.house_robber2
+    229.majority_element_2
+    238.product_of_array_except_self
     )
 
 set(hard

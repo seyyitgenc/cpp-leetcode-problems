@@ -3,6 +3,9 @@
 #include <string>
 #include <algorithm>
 #include <map>
+
+// solution : https://leetcode.com/problems/group-anagrams/
+
 class Solution {
 public:
     std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& strs) {
@@ -36,25 +39,25 @@ public:
         //     result.push_back(anagrams);   
         // }
         //  return result;
-        
-        std::map<std::string, std::vector<std::string>> map;
-        std::vector<std::vector<std::string>> result;
+
+        std::vector <std::vector<std::string>> result;
+        std::map <std::string,std::vector<std::string>> map;
         for (auto i : strs)
         {
-            std::string word = i;
-            std::sort(word.begin(),word.end());
-            map[word].push_back(i);
+            std::string str = i;
+            std::sort(str.begin(),str.end());
+            map[str].push_back(i);
         }
         for (auto i : map)
             result.push_back(i.second);
-        
-        return result;
+            
+        return result;   
     }
 };
 
 int main(){
     Solution sol;
-    std::vector<std::string> strs = {"cab","tin","pew","duh","may","ill","buy","bar","max","doc"};
+    std::vector<std::string> strs = {"nit","tin","pew","duh","may","ill","buy","bar","max","doc"};
     std::vector<std::vector<std::string>> result =  sol.groupAnagrams(strs);
 
     for (int i = 0; i < result.size(); i++)
