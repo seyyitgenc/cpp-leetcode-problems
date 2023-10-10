@@ -31,6 +31,7 @@ set(easy
 
 set(medium
     2.add_two_numbers
+    3.longest_substring_without_rerpeating_chars
     7.reverse_integer
     11.container_with_most_water
     15.3sum
@@ -38,8 +39,11 @@ set(medium
     19.remove_nth_node_from_end
     48.rotate_image
     49.group_anagrams
+    80.remove_duplicates_sorted_2
+    189.rotate_array
     198.house_robber1
     213.house_robber2
+    215.kth_largest_element
     229.majority_element_2
     238.product_of_array_except_self
     )

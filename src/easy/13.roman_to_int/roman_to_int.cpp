@@ -1,34 +1,33 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
-// problem link : https://leetcode.com/problems/roman-to-integer/
+
 class Solution {
 public:
-    int romanToInt(std::string s){
-        int answer = 0;
-        std::unordered_map<char,int> map;        
-        map['I'] =  1;
-        map['V'] =  5;
-        map['X'] =  10;
-        map['L'] =  50;
-        map['C'] =  100;
-        map['D'] =  500;
-        map['M'] =  1000;
+    int romanToInt(std::string s) {
+        std::unordered_map<char,int> map;
+        map['I'] = 1;
+        map['V'] = 5;
+        map['X'] = 10;
+        map['L'] = 50;
+        map['C'] = 100;
+        map['D'] = 500;
+        map['M'] = 1000;
+
+        int result = 0;
         for (auto i = s.begin(); i < s.end(); i++)
         {
-            if (map[*i] < map[*(i+1)])
-                answer -=  map.at(*i);   
+            if (map[*i] < map[*(i + 1)])
+                result -= map[*i]; 
             else
-                answer +=  map.at(*i);   
+                result += map[*i];
         }
-        return answer;
+        return result;
     }
 };
 
 int main(){
-   
-   std::string s = "MCMXCIV";
-   Solution sol;
-   std::cout << sol.romanToInt(s);
-   return 0;
+    Solution sol;
+    std::cout << sol.romanToInt("MCMXCIV");
+    return 0;
 }
