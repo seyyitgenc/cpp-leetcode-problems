@@ -22,6 +22,8 @@ set(easy
     21.merge_two_sorted_lists
     26.remove_duplicates_sorted
     27.remove_element
+    28.index_of_occurance
+    58.length_of_last_word
     88.merge_sorted_array
     121.max_profit_stocks
     169.majority_element

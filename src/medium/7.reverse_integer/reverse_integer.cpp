@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <climits>
 // problem link : https://leetcode.com/problems/reverse-integer/
 
 class Solution {
