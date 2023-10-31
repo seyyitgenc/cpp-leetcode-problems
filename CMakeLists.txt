@@ -29,6 +29,11 @@ set(easy
     169.majority_element
     217.contains_duplicates
     242.valid_anagram
+    345.reverse_vowels_strings
+    605.can_place_flowers
+    1071.greatest_common_divisor_strings
+    1431.kids_with_greatest_candy
+    1768.merge_strings_alternately
     )
 
 set(medium
