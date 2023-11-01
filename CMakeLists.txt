@@ -29,7 +29,9 @@ set(easy
     169.majority_element
     217.contains_duplicates
     242.valid_anagram
+    283.move_zeroes
     345.reverse_vowels_strings
+    392.is_subsequance
     605.can_place_flowers
     1071.greatest_common_divisor_strings
     1431.kids_with_greatest_candy
@@ -47,12 +49,14 @@ set(medium
     48.rotate_image
     49.group_anagrams
     80.remove_duplicates_sorted_2
+    151.reverse_words_string
     189.rotate_array
     198.house_robber1
     213.house_robber2
     215.kth_largest_element
     229.majority_element_2
     238.product_of_array_except_self
+    1679.max_number_of_sum_pairs
     )
 
 set(hard
