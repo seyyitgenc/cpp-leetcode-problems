@@ -32,6 +32,7 @@ set(easy
     283.move_zeroes
     345.reverse_vowels_strings
     392.is_subsequance
+    643.maximum_avarage_subarray1
     605.can_place_flowers
     1071.greatest_common_divisor_strings
     1431.kids_with_greatest_candy
