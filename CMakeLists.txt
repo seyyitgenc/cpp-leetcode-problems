@@ -57,7 +57,9 @@ set(medium
     215.kth_largest_element
     229.majority_element_2
     238.product_of_array_except_self
+    1441.build_array
     1679.max_number_of_sum_pairs
+    1921.eliminate_monsters
     )
 
 set(hard
