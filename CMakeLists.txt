@@ -35,8 +35,11 @@ set(easy
     643.maximum_avarage_subarray1
     605.can_place_flowers
     1071.greatest_common_divisor_strings
+    1207.unique_number_of_occurances
     1431.kids_with_greatest_candy
     1768.merge_strings_alternately
+    2215.find_the_diff
+
     )
 
 set(medium
@@ -58,6 +61,7 @@ set(medium
     229.majority_element_2
     238.product_of_array_except_self
     1441.build_array
+    1657.determine_if_two_strings_close
     1679.max_number_of_sum_pairs
     1921.eliminate_monsters
     )
