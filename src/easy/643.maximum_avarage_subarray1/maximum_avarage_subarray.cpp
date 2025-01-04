@@ -26,7 +26,7 @@ public:
 
         // lets make it O(n)
         double sum = 0;
-        double max_sum = INT_MIN;
+        double max_sum = INT16_MIN;
         for (int i = 0; i < nums.size(); i++)
         {
             sum += nums[i];

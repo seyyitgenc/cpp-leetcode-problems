@@ -66,7 +66,9 @@ set(medium
     1921.eliminate_monsters
     )
 
-set(hard
+set(
+    hard
+    4.median_of_two_sorted_arrays
     )
 
 function(create_project_from_sources chapter demo)
